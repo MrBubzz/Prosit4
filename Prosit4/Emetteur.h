@@ -3,5 +3,5 @@
 class Emetteur
 {
 public:
-	void diffuser();
+	void signal(const char*);
 };
