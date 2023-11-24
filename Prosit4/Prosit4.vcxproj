@@ -129,10 +129,12 @@
   <ItemGroup>
     <ClCompile Include="Emetteur.cpp" />
     <ClCompile Include="Prosit4.cpp" />
+    <ClCompile Include="Canal.cpp" />
     <ClCompile Include="Recepteur.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Emetteur.h" />
+    <ClInclude Include="Canal.h" />
     <ClInclude Include="Recepteur.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

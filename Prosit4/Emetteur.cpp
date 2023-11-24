@@ -1,14 +1,12 @@
 #include <iostream>
 #include "Emetteur.h"
-#include "Recepteur.h"
+#include "Canal.h"
 
 using namespace std;
 
-typedef void (*evt)(const char*);
-evt e;
+typedef void (Canal::* ptr)(string); ptr signal = &Canal::transmission;
 
-void Emetteur::signal(const char* message)
+void Emetteur::envoyer(Canal o, string message)
 {
-	e = &Recepteur::ecoute;
-	e(message);
+	(o.*signal)(message);
 }
