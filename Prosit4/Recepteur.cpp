@@ -1,9 +1,6 @@
-#include <iostream>
 #include "Recepteur.h"
 
-using namespace std;
-
-void Recepteur::ecoute(const char* message)
+void Recepteur::ecouter(string canal)
 {
-	cout << message << endl;
+	cout << "Signal recu : " << canal << endl;
 }

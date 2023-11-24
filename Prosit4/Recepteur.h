@@ -1,7 +1,12 @@
 #pragma once
+#include <iostream>
+#include <string>
+#include "Canal.h"
+
+using namespace std;
+
 class Recepteur
 {
 public:
-	static void ecoute(const char*);
+	void ecouter(string canal);
 };
-

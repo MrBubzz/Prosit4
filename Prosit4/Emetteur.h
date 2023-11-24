@@ -1,7 +1,8 @@
 #pragma once
+#include "Canal.h"
 
 class Emetteur
 {
 public:
-	void signal(const char*);
+	void envoyer(Canal o, string message);
 };
